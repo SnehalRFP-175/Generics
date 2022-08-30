@@ -1,13 +1,25 @@
 /*
- * Refactor 1 - One Generic method to find the maximum value of Integer, Float, String
+ * Refactor 2 -  Generic class to find the maximum value of Integer, Float, String
  */
 
 package com.Generics.BridgeLabz;
 /**
 * @author -Snehal Nanavare.
 */
-public class MaxValue {
 
+//GenericCclass
+public class MaxValue<T extends Comparable<T>> 
+{
+
+	T num1, num2, num3;
+
+	public MaxValue(T num1, T num2, T num3) 
+	{
+		this.num1 = num1;
+		this.num2 = num2;
+		this.num3 = num3;
+	}
+	
 	/*
 	 *Generic method for finding  maximum value of any type of data.
 	 */
